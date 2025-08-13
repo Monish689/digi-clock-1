@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(135deg, #030207, #302b63, #24243e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+#card {
+    position: relative;
+    width: 50%;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4),
+                inset 0 0 15px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the card */
+#card:hover {
+    transform: scale(1.05);
+}
+
+#clock {
+    font-family: 'Digital-7', monospace;
+    font-size: 80px;
+    color: #00ffcc;
+    text-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffee, 0 0 40px cyan;
+    letter-spacing: 5px;
+}
+
+/* Message styling */
+#message {
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 0 0 5px white;
+}
+
+/* Import seven-segment font */
+@font-face {
+    font-family: 'Digital-7';
+    src: url('https://fonts.cdnfonts.com/s/11671/Digital7Mono-B1g5.woff') format('woff');
+}
